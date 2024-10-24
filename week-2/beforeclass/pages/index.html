@@ -1,0 +1,191 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Tiêu đề trang web</title>
+    </head>
+
+    <body>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>heading 3</h3>
+        <h4>heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+    </body>
+</html> -->
+<!--
+    1. h1 - h6 heading
+    2. p paragraph
+    3. a anchor (đặt liên kết)
+    4. ul, li, ol (thể hiện dạng danh sách unordered list, list)
+    5. table
+    6. input
+    7. button
+    9. div division: tạo khối bao quanh một vùng
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Hello Worldd
+    <h1>Heading 1</h1>
+    <h1 style="font-size:20px;">Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>Heading 5</h5>s
+    <h6>Heading 6</h6>
+
+    <p>This is a paragraph</p>
+
+    <a href="https://eop.edu.vn/">Web hoc tieng anh top 1 Campuchia</a><br>
+    <a href="https://eop.edu.vn/" target="_blank">Web hoc tieng anh top 1 Lao</a><br>
+    <a href="https://eop.edu.vn/" target="_parent">Web hoc tieng anh top 1 Lao</a><br>
+    <a href="https://eop.edu.vn/" target="_top">Web hoc tieng anh top 1 Lao</a><br>
+    <!-- 
+        <img src="https://cdn.pixabay.com/photo/2024/10/03/20/33/robin-9094847_640.jpg" alt="Image" width="50" height="60" />
+        <img
+        src="https://i.pinimg.com/originals/85/97/43/8597430660c7fec44b74cb3e695e7554.jpg"
+        width="100"
+        height="100"
+        />-->
+    <img src="../images/butterfly-9093549.jpg" alt="Image" width="100" height="100">
+    <img src="../images/1/lighthouse-9073925.png" alt="Image" width="100" height="100>
+    <!-- <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"> -->
+
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+
+
+    <!-- <table border="1">
+        <tr>
+            <th colspan="2">Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+ -->
+
+
+    <button type="button">Click Me!</button>
+
+
+
+    <!-- <form>
+        <label for="fname">First name</label><br/>
+        <input type="text" id="fname" name="fname"><br/>
+        <label for="lname">Last name</label>
+        <input type="text" name="lname" id="lname">
+    </form>
+    <form>
+        <label for="usernawe">Username:</label><br/>
+        <input type="text" id="username" name="username"><br/>
+        <label for="pwd">Password:</label><br/>
+        <input type="password" id="pwd" name="pw"><br/>
+    </form> -->
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label><br/>
+
+        <input for="radio" id="css" name="fav_language" value="CSS"></label>
+        <label for="css">CSS</label><br/>
+        
+        <input 
+            type="radio"
+            id="javascript"
+            name="fav_language"
+            value="Javascript"
+        />
+        <label for="javascript">Javascript</label>
+    </form>
+    
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+        <label for="vehicle1"> I have a bike</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+        <label for="vehicle2"> I have a car</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <label for="vehicle3"> I have a boat</label>
+    </form>
+
+
+
+
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+
+
+    <textarea name="message" rows="10" cols="30"></textarea>
+
+
+    <div>
+        <header>
+            <h1>Welcome to My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div style="background-color: #FFF4A3">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            <p>&copy; 2024 My Website. All Rights Reserved.</p>
+            <nav>
+                <a href="#privacy-policy">Privacy Policy</a> |
+                <a href="#terms">Terms of Service</a>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>
