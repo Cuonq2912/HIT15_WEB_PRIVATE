@@ -1,0 +1,51 @@
+html{
+    font-size: 40px;
+}
+
+/* dat cs cho 1 the p co id laf box */
+/* class selector */
+.box {
+    width: 50%;
+    height: 100px;
+    background-color: red;
+}
+/* id selector
+#.box{ */
+
+
+h1{
+    font-size: 1rem; /*40px 2rem-80px*/
+    /* em cha truc tiep
+        rem html */
+}
+div {
+    background-color: lightblue;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+    background-size: cover;
+}
+div {
+    border-width: 2px; /*rem, em*/
+    border-style: double; /*Kiểu viền (solid, dashed, dotted, double).*/
+    border-color: red;
+}
+div{
+    border: 2px solid rosybrown;
+    border-radius: 20px;
+}
+p {
+    text-align: center; /* Căn giữa văn bản */
+    text-transform: uppercase; /* In hoa toàn bộ văn bản */
+    text-decoration: line-through; /* Gạch ngang */
+}
+p {
+    font-family: "Arial", sans-serif; /* Font Arial, và sans-serif dự phòng */
+    font-size: 24px;
+    font-weight: bold; /* Đậm chữ */
+}
+div {
+    /* width: 300px;  */
+    max-width: 500px;
+    /* height: 200px;  */
+    min-height: 10px;
+  }

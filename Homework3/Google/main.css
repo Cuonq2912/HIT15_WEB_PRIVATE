@@ -1,0 +1,75 @@
+body{
+    background-color: #ff95d3;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#out{
+    width: 100%;
+    height: 500px;
+    background-color: #ffa9d0;
+    margin: 150px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#in{
+    width: 60%;
+    height: 80%;
+    background-color: #ffd4e8;
+    margin: 30px auto;
+    padding-top: 40px;
+    border-style: solid;
+    border-color: #ff95d3;
+    border-width: 5px;
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+} 
+
+.logo{
+    font-family: 'Product Sans', Arial, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: -5px;
+}
+
+#getYourSearch{
+    font-family: 'Product Sans', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 750;   
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#tagline{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#searchInput{
+    width: 65%;
+    height: 10%;
+    margin: 5px 0;
+    padding: 0px 15px;
+    border: none;
+    border-radius: 20px;
+}   
+
+.content{
+    text-align: center;
+    color: black;
+}
+
+.searchButton{
+    width: 120px;
+    background-color: #feb5df;  
+    color: black;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;    
+}

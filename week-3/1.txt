@@ -1,0 +1,2 @@
+chiều rộng thực tế của phần tử: widge(content-box) : content + padding*2 + border*2 = border box
+
