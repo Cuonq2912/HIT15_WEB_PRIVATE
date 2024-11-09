@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Interface Clothes Store Fake</title>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="./assets/images/image_clothes.jpg" alt="Clothes Image">
+        <!-- san pham A -->
+        <div id="sanPhamA">
+            <h2>Sản Phẩm A</h2>
+            <p>Đây là mô tả của sản phẩm A. Nó rất tuyệt vời</p>
+            <p class="price">$49.99 </p>
+            <span id="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>  
+            </span>       
+            <span style="font-weight: bold;">4.0(120 đánh giá)</span>
+            <br>
+            <span class="product-labels">
+                <span><i class="fa-solid fa-tags"></i>
+                    Hàng mới</span>
+                <span><i class="fa-solid fa-star"></i>
+                    Phổ biến</span>
+                <span><i class="fa-solid fa-gift"></i>
+                    Khuyến mãi</span>
+                <br>
+                <span><i class="fa-solid fa-thumbs-up"></i>
+                    Được yêu thích</span>
+                <span><i class="fa-solid fa-recycle"></i>
+                    Bền vững</span>
+                <span><i class="fa-solid fa-user-shield"></i>
+                    Bảo hành 1 năm</span>
+            </span>
+            <br>
+            <span><button id="addToGioHang"><i class="fa-solid fa-cart-shopping"></i>Thêm vào giỏ hàng</button></span>
+        </div>
+        <!-- thong tin chi tiet -->
+        <div id="thongtinchitiet">
+            <h3>Thông tin chi tiết:</h3>
+            <ul>
+                <li>Chất liệu: Vải cotton</li>
+                <li>Màu sắc: đỏ xanh vàng</li>
+                <li>Kích thước: S M L XL</li>
+                <li>Thương hiệu: Thương hiệu X</li>
+            </ul>
+        </div>
+        <!-- thong tin bo sung -->
+        <div id="thongtinbosung">
+            <h3 style="margin-bottom: 0.3em">Thông tin bổ sung:</h3>
+            <span class="product-labels">
+                <span><i class="fa-solid fa-money-bill"></i>
+                    Thanh toán an toàn</span>
+                <span><i class="fa-solid fa-headset"></i>
+                    Hỗ trợ khách hàng 24/7</span>
+                <br>
+                <span><i class="fa-solid fa-lock"></i>
+                    Đảm bảo an toàn thông tin</span>
+                <span>
+                    Cam kết chất lượng</span>
+                <br>
+                <span><i class="fa-solid fa-arrows-rotate"></i>
+                    Đổi trả trong 30 ngày</span>
+            </span>
+        </div>
+        <!-- tinh nang noi bat -->
+        <div id="tinhnangnoibat">
+            <h3>Tính năng nổi bật: </h3>
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Thiết kế hiện đại</span><br>
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Dễ dàng bảo quản</span><br>
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Thích hợp cho mọi dịp</span><br>
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Khả năng thấm hút tốt</span><br>
+        </div>
+        <!-- huong dan su dung -->
+        <div id="hdsd">
+            <h3>Hướng dẫn sử dụng:</h3>
+            <p>Để đảm bảo sản phẩm luôn trong tình trạng tốt nhất, hãy làm theo các hướng dẫn sau:</p>
+            <i class="fa-solid fa-wrench"></i>
+            <span>Giặt ở nhiệt độ thấp</span><br>
+            <i class="fa-solid fa-gear"></i>
+            <span>Tránh ánh nắng mặt trời</span><br>
+            <i class="fa-solid fa-umbrella"></i>
+            <span>Bảo quản nơi khô ráo</span><br>
+        </div>
+        <!-- tinh nang dac biet -->
+        <div id="tndb">
+            <h3>Tính năng đặc biệt:</h3>
+            <i class="fa-solid fa-star"></i>
+            <span>Công nghệ chống nhăn</span><br>
+            <i class="fa-solid fa-star"></i>
+            <span>Vải thoáng khí</span><br>
+            <i class="fa-solid fa-star"></i>
+            <span>Thiết kế bền vững</span><br>
+        </div>
+        <!-- chia se san pham -->
+        <div id="shareProduct">
+            <h3>Chia sẻ sản phẩm:</h3>
+            <nav>
+                <a class="linked" id="facebook" href=""><i class="fa-brands fa-facebook"></i>Facebook</a>
+                <a class="linked" id="twitter" href=""><i class="fa-brands fa-twitter"></i>Twitter</a>
+                <a class="linked" id="instagram" href=""><i class="fa-brands fa-instagram"></i>Instagram</a>
+             </nav>
+        </div>
+        <!-- danh gia san pham -->
+        <div id="danhgiasanpham">
+            <h2>Đánh giá sản phẩm:</h2><br>
+            <textarea placeholder="Nhập đánh giá của bạn..."></textarea>
+            <button id="sendEvaluate">Gửi đánh giá</button>
+        </div>
+    </div>
+    <!-- san pham lien quan -->
+    <div class="container2">
+        <h3>Sản phẩm liên quan:</h3>
+        <table>
+            <tr>
+                <td><span><img src="./assets/images/image_clothes.jpg" alt="Clothes Image"></span></td>
+                <td id="sp" style="text-align: left;">Sản phẩm B</td>
+                <td class="price">$39.99</td></span>
+            </tr>
+            <tr>
+                <span><td><img src="./assets/images/image_clothes.jpg" alt="Clothes Image"></td></span>
+                <td id="sp">Sản phẩm C</td>
+                <td class="price">$29.99</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

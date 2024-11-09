@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffde8;
+}
+
+:root {
+    --primary-width: 100%;
+    --secondary-width: 30%;
+    --primary-font-family: 'Arial';
+    --blue: #4e91bb;
+    --orange: #ff6731;
+    --lightblue: #dae4fa;
+    --yellow: #f5b339;
+    --violet: #c185e7;
+    --red: #d24242;
+    --price-color: #66d881;
+    --twitter-color: #1da1f2;
+    --instagram-color: #c32aa3;
+    --facebook-color: #3b5998;
+}
+
+.container {
+    width: var(--secondary-width);
+    margin: 2vh auto;
+    padding: 3vh;
+    background-color: #fafafa;
+    border-style: solid; 
+    border-radius: 15px;
+    border-color: #d3d5ca;
+    border-width: 1px;
+    box-sizing: border-box;
+    font-family: var(--primary-font-family);
+}
+
+.image {
+    width: var(--primary-width);
+    margin-bottom: 0.8em;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.price {
+    color: var(--price-color);
+    font-weight: bolder;
+}
+
+#sanPhamA h2 {
+    color: var(--blue);
+}
+
+#sanPhamA p {
+    margin: 0.7em 0em;
+}
+
+#star-rating {
+    color: var(--yellow);
+    margin-right: 0.5em;
+}
+
+.product-labels span {
+    padding: 0.26em 0.3em;
+    margin-right: 0.15rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--lightblue);
+    border-radius: 15px;
+}
+
+.product-labels {
+    line-height: 2em;
+}
+
+
+#addToGioHang {
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+    padding: 0.5em;
+    background-color: var(--orange);
+    color: #fafafa;
+    border: none;
+    border-radius: 4.5px;
+}
+
+
+#thongtinchitiet ul {
+    margin: 1.2em;
+    margin-top: 0.5em;
+}
+
+#thongtinbosung {
+    margin-bottom: 1.25em;
+}
+
+#tinhnangnoibat h3, #hdsd h3, #tndb h3 {
+    margin-bottom: 0.4em;
+}
+
+#tinhnangnoibat h3 {
+    color: var(--blue);
+}
+
+#hdsd h3 {
+    color: var(--yellow);
+}
+
+#tndb h3 {
+    color: var(--red);
+}
+
+#tinhnangnoibat i.fa-circle-check, 
+#hdsd i.fa-wrench, #hdsd i.fa-gear, #hdsd i.fa-umbrella #hdsd p, 
+#shareProduct h3 {
+    margin-bottom: 0.4em;
+}
+
+#tinhnangnoibat i.fa-circle-check {
+    color: var(--blue);
+}
+
+#hdsd i.fa-wrench, #hdsd i.fa-gear, #hdsd i.fa-umbrella {
+    color: var(--yellow);
+}
+
+#tndb i.fa-star {
+    color: var(--red);
+    margin-bottom: 0.3em;
+}
+
+#hdsd span {
+    color: var(--violet);
+}
+
+#tndb span {
+    color: var(--red);
+}
+
+#hdsd, #tndb {
+    margin: 0.8em 0;
+}
+
+
+
+.linked {
+    text-decoration: none;
+    padding: 0.35em 0.7em;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#facebook {background-color: var(--facebook-color)}
+
+#twitter {background-color: var(--twitter-color);}
+
+#instagram {background-color: var(--instagram-color);}
+
+#danhgiasanpham{
+    margin: 1.25em 0em;
+    border-radius: 5pm;
+}
+
+textarea{
+    width: var(--primary-width);
+    height: 15vh;
+    padding: 1em;
+}
+
+#sendEvaluate{
+    padding: 0.6em 0.75em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 5px;
+    color: #fafafa;
+    background-color: var(--twitter-color);
+}
+
+.container2 {
+    font-family: var(--primary-font-family);
+    width: var(--secondary-width);
+    margin: 2vh auto;
+    box-sizing: border-box;
+} 
+table img{
+    width: 2em; 
+    height: 2em; 
+    border-radius: 5px;
+}
+.container2 #sp{
+    padding: 0.75em 17rem 0.5em 0em;
+    text-align: left; 
+}
