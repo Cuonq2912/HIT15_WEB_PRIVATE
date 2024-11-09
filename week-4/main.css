@@ -17,7 +17,7 @@ body{
 .wrapper{
     width: var(--secondary-width);
     margin: 12vw auto;
-    padding: 3vw 5vh;
+    padding: 2.5vw 5vh;
     background-color: #feffff;
     border-radius: 15px;
     box-sizing: border-box;
