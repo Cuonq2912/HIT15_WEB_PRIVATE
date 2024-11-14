@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+:root{
+    --yellow: #e1ea8e;
+    --orange: #f97b00;
+    --brown: #fdd897;
+    --back-green: #031716;
+    --black-green-lighter: #105252;
+    --black-green-more-lighter: #0a7075;
+    --blue-green: #13506e;
+    --blue-green-lighter: #c0deef;
+}
+
+.main-picture{
+    width: 28em;
+    height: 18em;
+}
+
+.detail-picture{
+    width: 20em;
+    height: 12em;
+}
+
+.detail-picture, .main-picture {
+    border-radius: 16px; 
+}
+
+.container{
+    margin: 0em 16em;
+    padding: 2em 4em;
+    background-color: var(--black-green-lighter);
+    flex-direction: column;
+    gap: 2em;
+    color: #ffffff;
+}
+
+.header{
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.finding {
+    height: 2.6em;
+    width: 24em;
+    padding-left: 1em;
+    border: 1.5px solid var(--back-green);
+    border-radius: 24px;
+    font-size: 1em;
+    background-color: var(--blue-green-lighter); 
+  }
+  
+.card_header {
+    gap: 0em 3.75em;
+    align-items: center;
+    font-size: 1.2em;
+}
+  
+.button-home{
+    padding: 0.4em 2em;
+    border-radius: 8px;
+    border: none;
+    font-weight: bolder;
+    font-size: 1.12em;
+    color: var(--yellow);
+    background-color: var(--orange);
+}
+.button-home:hover{
+    color: white;
+    background-color: #ffffff;
+}
+
+.card_content {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.card_content h1{
+    font-size: 3em;
+    text-align: right;
+}
+
+.card_content p{
+    font-size: 2em;
+    text-align: right;
+}
+
+.card_content button{
+    width: 8em;
+    height: 2.75em;
+    background-color: var(--orange);
+    color: var(--yellow);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25em;
+}
+
+.card_content button:hover{
+    color: white;
+    background-color: #ffffff;
+}
+
+.card_middle-content{
+    background-color: var(--blue-green);
+    padding: 0.75em;
+    border: none;
+    border-radius: 8px;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.product-categories{
+    justify-content: space-between;
+}
+
+.product-category{
+    flex-direction: column;
+    gap: 1em;
+}
+
+.product-category p{
+    background-color: var(--blue-green);
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1em 2em;
+    width: 100%;
+    text-align: center;
+}
