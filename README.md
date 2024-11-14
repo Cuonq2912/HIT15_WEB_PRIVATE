@@ -1,5 +1,5 @@
 # HIT15_WEB_PRIVATE
-Homework Submission for **Intro to HTML CSS** class at **HIT Club HAUI**
+Homework Submission for **Intro to HTML CSS Javascript** class at **HIT Club HAUI**
 
 # Authors
 - Name: Nguyen Trong Cuong - [NguyenTrongCuong](https://github.com/Cuonq2912)
