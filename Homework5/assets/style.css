@@ -9,7 +9,7 @@
     display: flex;
 }
 
-.container {
+.container{
     background-image: url(./images/background-image.jpg);
     background-size: cover;
     background-position: center;
@@ -18,7 +18,7 @@
     padding: 2em 5em;
 }
 
-.card {
+.card{
     flex-direction: column;
     align-items: center;
     background-image: url(./images/featured-image.jpg);
@@ -40,22 +40,28 @@
     color: rgb(208, 255, 0);
 }
 
-.card_input {
+.card_input{
     width: 60%;
     height: 2.6em;
     padding-left: 1em;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     font-size: 1.2em;
+    box-shadow: 5px 5px 5px rgba(216, 216, 23, 0.2);
 }
 
-.card_input:hover {
+.card_input::placeholder{
+    color: olive    ; 
+    font-style: italic;
+}
+
+.card_input:hover{
     border: 1px solid yellow;
     background-color: rgba(255, 255, 0, 0.2);
     transition: 0.3s;
 }
 
-.content {
+.content{
     justify-content: space-between;
     gap: 1em;
 }
@@ -76,7 +82,7 @@
     color: orange;
 }
 
-.content .classify .classify_button:hover {
+.content .classify .classify_button:hover{
     background-color: orange;
     color: aliceblue;
     transform: scale(1.05);
@@ -126,7 +132,6 @@
     border-radius: 10px;
     color: rgb(251, 255, 0);
 }
-
 
 .detail-card .detail-card_item button:hover {
     background-color: aliceblue;
