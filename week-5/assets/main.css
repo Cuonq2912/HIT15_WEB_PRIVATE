@@ -11,10 +11,10 @@
 
 :root{
     --yellow: #e1ea8e;
-    --orange: #f97b00;
+    --orange: #fc860f;
     --brown: #fdd897;
     --back-green: #031716;
-    --black-green-lighter: #105252;
+    --black-green-lighter: #1e6c6c;
     --black-green-more-lighter: #0a7075;
     --blue-green: #13506e;
     --blue-green-lighter: #c0deef;
@@ -53,11 +53,16 @@
     height: 2.4em;
     width: 21em;
     padding-left: 1em;
-    border: 1.5px solid var(--back-green);
+    border: none;
     border-radius: 24px;
     font-size: 1em;
     background-color: var(--blue-green-lighter); 
-  }
+}
+
+input::placeholder{
+    color: var(--blue-green);
+    font-style: italic;
+}
   
 .card_header {
     gap: 0em 3.75em;
@@ -65,7 +70,7 @@
     font-size: 1.1em;
 }
   
-.button-home{
+.button-home {
     padding: 0.4em 2em;
     border-radius: 8px;
     border: none;
@@ -75,7 +80,7 @@
     background-color: var(--orange);
 }
 .button-home:hover{
-    color: white;
+    color: rgb(236, 152, 6);
     background-color: #ffffff;
 }
 
@@ -106,7 +111,7 @@
 }
 
 .card_content button:hover{
-    color: white;
+    color: rgb(236, 152, 6);
     background-color: #ffffff;
 }
 
