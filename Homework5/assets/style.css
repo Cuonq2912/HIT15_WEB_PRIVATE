@@ -27,7 +27,6 @@
     gap: 2em;
     padding: 4em 2em;
     color: aliceblue;
-    text-align: center;
     border-radius: 10px;
 }
 
@@ -67,7 +66,6 @@
 }
 
 .content .classify{
-    gap: 1em;
     width: 30%;
     flex-direction: column;
     justify-content: space-between;
@@ -94,14 +92,8 @@
     color: aliceblue;
 }
 
-.classify_button::hover{
-    background-color: orange;
-    color: aliceblue;
-}
-
 .content .detail-card {
     width: 100%;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: 3.5em;
     justify-content: flex-end;
@@ -109,7 +101,6 @@
 
 .detail-card .detail-card_item{
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     gap: 0.8em;
 }

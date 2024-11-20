@@ -1,0 +1,45 @@
+.static-box {
+    position: static;
+    background-color: red;
+  }
+
+  .relative-box {
+    position: relative;
+    top: 20px; /* Di chuyển xuống 20px */
+    left: 30px; /* Di chuyển sang phải 30px */
+    background-color:red;
+  }
+
+  .relative-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+  }
+  
+  .absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: lightpink;
+    padding: 10px;
+  }
+
+  .fixed-box {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .sticky-container {
+    height: 200vh; /* Tăng chiều cao để cuộn */
+  }
+  
+  .sticky-box {
+    position: sticky;
+    top: 20px; /* Cố định cách mép trên 20px */
+    background-color: orange;
+    padding: 10px;
+  }
