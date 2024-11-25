@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --orange-color: #f5830b;
+    --title-color: #051441;
+    --describle-text-color: #5d677e;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    padding: 30px 160px;
+    flex-direction: column;
+    gap: 4em;
+    height: 1000px;
+    background-color: #ffffff;
+}
+
+.section {
+    flex-direction: column;
+    gap: 150px;
+}
+
+/* header */
+.navbar {
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+
+.logo-container{
+    gap: 1em;
+}
+.logo-container img{
+    width: 70%;
+    height: 70%;
+}
+.brand-name{
+    font-weight: bold;
+}
+
+.menu-items {
+    list-style: none;
+    gap: 3em;
+    color: #5d677e;
+}
+
+.auth-buttons {
+    position: relative;
+    top: -12px;
+    display: flex;
+    gap: 1em;
+}
+
+.menu-items li:first-child {
+    color: var(--orange-color);
+    position: relative;
+}
+
+#card-login, #card-signup, #btn-get-started, #btn-watch-video{
+    padding: 1em 2.5em;
+    border-radius: 30px;
+    border-color: #e7e7e7;
+}
+
+#card-login{
+    color: var(--orange-color);
+}
+
+#card-signup, #btn-get-started {
+    background-color: var(--orange-color);
+    color: #e7e7e7;
+}
+
+
+/* for-all */
+.hero-section, .hero-section1, .hero-section2, .hero-section3 {
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 7em; 
+}
+
+.hero-content {
+    flex-direction: column;
+    gap: 1.3em;
+}
+
+.hero-content .describle-text{
+    width: 550px;
+}
+
+.hero-images {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.describle-text {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.highlight-text{
+    color: var(--orange-color);
+    letter-spacing: 0.06cm;
+}
+
+.main-title{
+    flex-wrap: wrap;
+    font-weight: bolder;
+    font-size: 3.4em;
+    color: var(--title-color);
+}
+
+.describle-text{
+    color: var(--describle-text-color);
+}
+
+/* section0-content */
+
+.cta-buttons{
+    gap: 2em;
+}
+
+.triangle {
+    position: relative;
+    top: 14.5px;
+    left: 16.5px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid var(--orange-color);
+}
+
+.cta-buttons #shape-container{
+    width: 3em;
+    height: 3em;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(41, 41, 38, 0.2);
+}
+
+
+/* section0-image */
+.human, .popular-business, .x, .instagram, .p4689, .dot, .Abstract{
+    position: absolute;
+}
+
+.hero-section .hero-images .background{
+    position: relative;
+    width: 34em;
+    height: 30em;
+    object-fit: cover;
+}
+
+.hero-section .hero-images .human{
+    right: 177px;
+    bottom: 116px;
+    width: 33em;
+    height: 36em;
+}
+
+.hero-section .hero-images .popular-business{
+    top: 460px;
+    right: 510px;
+}
+
+.x{
+    top: 450px;
+}
+.instagram{
+    top: 310px;
+    right: 250px;
+}
+#p6989-1{
+    top: 530px;
+    right: 350px;
+    z-index: 1000;
+}
+#ab1{
+    top: 120px;
+    right: 40px;
+}
+#ab2{
+    top: 220px;
+    right: 550px;
+}
+#ab3{
+    top: 430px;
+    right: 40px;
+}
+#d1{
+    top: 210px;
+    right: 320px;
+}
+#d2{
+    top: 408px;
+    right: 680px;
+}
+#d3{
+    top: 560px;
+    right: 220px;
+}
+
+
+/* section1-image */
+
+#followers, #like, #love, #vector, #vector2, #pointer, #Rectangle_red, #Rectangle_yellow, #big-orange-dot, 
+.human, .Rectangle_white, .medium-white-dot, .small-dot, .small-orange-dot{
+    position: absolute;
+}
+.hero-section1 .hero-images .human{
+    left: 150px;
+    bottom: -450px;
+    z-index: 1000;
+}
+
+.hero-section1 .hero-images #followers{
+    left: 460px;
+    bottom: -447px;
+}
+
+.hero-section1 .hero-images #like{
+    left: 480px;
+    bottom: -207px;
+}
+
+.hero-section1 .hero-images #love{
+    left: 570px;
+    bottom: -287px;
+}
+
+.hero-section1 .hero-images .Abstract{
+    left: 10px;
+    bottom: -307px;
+}
+
+.hero-section1 .hero-images #vector{
+    left: 190px;
+    bottom: -137px;
+}
+
+.hero-section1 .hero-images #vector2{
+    left: 590px;
+    bottom: -487px;
+}
+
+.hero-section1 .hero-images #pointer{
+    left: 600px;
+    bottom: -421px;
+}
+
+.hero-section1 .hero-images #Rectangle_red{
+    left: 400px;
+    bottom: -193px;    
+}
+
+.hero-section1 .hero-images #Rectangle_yellow{
+    left: 190px;
+    bottom: -321px;   
+}
+
+.hero-section1 .hero-images #rw1{
+    left: 190px;
+    bottom: -307px;
+}
+
+.hero-section1 .hero-images #rw2{
+    left: 394px;
+    bottom: -189px;
+}
+
+.hero-section1 .hero-images #big-orange-dot{
+    left: 240px;
+    bottom: -57px;
+}
+
+.hero-section1 .hero-images #od1{
+    left: 520px;
+    bottom: -457px;
+}
+.hero-section1 .hero-images #od2{
+    left: 650px;
+    bottom: -307px;
+}
+
+.hero-section1 .hero-images #mwd1{
+    left: 225px;
+    bottom: -253px;
+}
+
+.hero-section1 .hero-images #mwd2{
+    left: 510px;
+    bottom: -237px;
+}
+
+.hero-section1 .hero-images #mwd3{
+    left: 185px;
+    bottom: -387px;
+}
+
+.hero-section1 .hero-images #mwd4{
+    left: 247px;
+    bottom: -91px;
+}
+
+.hero-section1 .hero-images #sd1{
+    left: 180px;
+    bottom: -137px;
+}
+
+.hero-section1 .hero-images #sd2{
+    left: 535px;
+    bottom: -87px;
+}
+
+.hero-section1 .hero-images #sd3{
+    left: 520px;
+    bottom: -162px;
+}
+
+
+/* section2-image */
+#customer, #fler-stats, #pic4689, .human{
+    position: absolute;
+}
+
+
+.hero-section2 .hero-images .background{
+    width: 28em;
+    height: 24.5em;
+    object-fit: cover;
+}
+.hero-section2 .hero-images .human{
+    width: 25em;
+    height: 22.5em;
+    right: 170px;
+    object-fit: cover;
+}
+
+.hero-section2 .hero-images #pic4689{
+    right: 180px;
+    bottom: -1070px;
+}
+
+.hero-section2 .hero-images #fler-stats{
+    right: 260px;
+}
+
+.hero-section2 .hero-images #customer{
+    width: 270px;
+    height: 270px;
+    right: 620px;
+    bottom: -1000px;
+    z-index: 1;
+}
+
+.hero-section1 .hero-content #btn-get-started,
+.hero-section2 .hero-content #btn-get-started,
+.hero-section3 .hero-content #btn-get-started
+{
+    width: 147px;
+}
+
+.human1, .human2, .human3{
+    background-color: #ffffff;
+    width: 230px;
+    position: absolute;
+    border-radius: 10px;
+    padding: 1em 1em 3em 1em;
+}
+
+.human1{
+    left: 190px;
+    bottom: -1580px;
+}
+
+.human2{
+    left: 190px;
+    bottom: -1330px;
+}
+.human3{
+    left: 450px;
+    bottom: -1455px;
+}
+
+.ic{
+    position: absolute;
+    left: 200px;
+    bottom: 16px;
+}
+
+.container-of-human .star{
+    position: absolute;
+    left: 190px;
+    bottom: 210px;
+}
+
+.container-of-human .st{
+    position: absolute;
+    left: 202px;
+    bottom: 210px;
+    font-size: 0.1em;
+}
+
+.container-of-human .a{
+    color: var(--describle-text-color)
+}
+
+.container-of-human #s{
+    font-size: 0.7em;
+    margin-bottom: 0.8em;
+}
+.container-of-human #b{
+    font-size: 0.9em;
+}
+.container-of-human h3{
+    margin-top: 0.5em;
+}
+
+
+#card-login:hover,
+#card-signup:hover,
+#btn-get-started:hover, 
+#btn-watch-video:hover
+{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    filter: brightness(1.2);
+}
+
+
+
+
+ 
+
