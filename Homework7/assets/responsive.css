@@ -23,7 +23,6 @@
 
     .grid-activity-pictures {
         grid-template-columns: repeat(2, 1fr);
-        /* grid-template-rows: repeat(2, 1fr) ; */
     }
 
     .grid-activity-pictures img {
@@ -39,6 +38,22 @@
     html, body, #main_image, #activity-pictures, #about {
         width: 100%;
     }
+
+    #header h1 {
+        font-size: 1.5rem;
+    }
+
+    .name-section{
+        font-size: 2.5rem;
+    }
+
+    .about-content h2{
+        font-size: 2rem;
+    }
+
+    .about-content p{
+        font-size: 1.6rem;
+    }
     
     #main_image img {
         width: 100%;
@@ -46,51 +61,59 @@
     }
 
     .grid-activity-pictures{
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
     
 }
 
-@media (max-width: 480px) {
-    html, body, #main_image, #activity-pictures, #about {
-        width: 100%;
+@media screen and (max-width: 425px){
+    body{
+        gap: 4rem;   
     }
-    html, body {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+
+    .grid-activity-pictures{
+        display: block;
+    }
+    .grid-activity-pictures img{
+        margin: 10px 0px;
+        border-radius: 20px;
     }
 
     .about-picture img{
-        width: 8em;
-        height: 8em;
+        width: 0px;
+        height: 0px;
+    }  
+
+    #header img, #footer img{
+        height: 2.4 rem;
+        width: 2.4rem;
     }
 
     #header h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
-    #main_image img {
-        width: 118%;
-        height: auto;
+    .name-section{
+        font-size: 2.5rem;
     }
 
-    .about-content-picture {
-        padding: 0 2rem;
-        font-size: 1.6rem;
+    .about-content{
+        font-size: 2rem;
     }
 
-
-    .grid-activity-pictures {
-        display: grid;
-        grid-template-columns: 1fr;
+    #im{
+        height: 18rem;
     }
 
-    .grid-activity-pictures img {
-        height: 15em;
+    hr{
+        position: relative;
+        bottom: 45px;
+        border: .2px solid var(--main-color--orange);
     }
 
-    #im {
-        height: 35em;
+    #footer .nav_list{
+        align-items: center;
     }
+
 }
