@@ -1,0 +1,341 @@
+@import "variables.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font);
+}
+
+.flex {
+    display: flex;
+}
+
+html {
+    height: 5000px;
+}
+
+/* HEADER */
+header {
+    height: 750px;
+    background-image: linear-gradient(to right,
+            #fff,
+            #fff 65%,
+            var(--secondary-color) 55%,
+            var(--secondary-color) 100%);
+
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+nav .logo-wrap {
+    width: 80px;
+    height: 80px;
+}
+
+nav .logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MENU */
+ul {
+    display: flex;
+    list-style: none;
+    gap: 64px;
+}
+
+ul a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+ul a:hover {
+    color: var(--secondary-color);
+}
+
+.search-wrap {
+    display: flex;
+    gap: 32px;
+    padding: 0 172px;
+}
+
+.search {
+    display: flex;
+    border: 3px solid;
+    height: 40px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 20px;
+    gap: 8px;
+    background-color: #fff;
+}
+
+.search .icon-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    outline: none;
+    border: none;
+}
+
+/* CONTENT */
+
+header .content {
+    width: 740px;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-top: 52px;
+    padding-left: 172px;
+}
+
+header .content .title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+header .content .main-title {
+    width: 390px;
+}
+
+header .content .title span {
+    color: var(--secondary-color);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--text-color);
+    color: #fff;
+    width: max-content;
+    padding: 8px 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+/* COFFEE IMAGE */
+
+.coffee {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    left: 52%;
+
+}
+
+.coffee img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coffee-item {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Categories */
+
+.categories {
+    display: flex;
+    background: #f6ebda;
+    padding: 28px 186px;
+    padding-top: 36px;
+    gap: 140px;
+    width: max-content;
+    border-radius: 48px;
+    position: relative;
+    margin-bottom: 12em;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+
+}
+
+.categories .cate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.categories .cate:nth-child(2) {
+    color: #a0583c;
+}
+
+.categories .cate-logo {
+    width: 90px;
+    height: 90px;
+}
+
+.categories .cate-logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* COLD_COFFEE  */
+.cold-coffee {
+    margin-top: 180px;
+    background-color: var(--background-color);
+    padding: 0 172px;
+}
+
+.cold-coffee .title {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.cold-coffee .title::after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 100px;
+    border: 2px solid var(--secondary-color);
+    left: 7.3%;
+    top: -5px;
+}
+
+.cold-coffee .emphasis-card {
+    gap: 2.6em;
+}
+
+.cold-coffee .emphasis-card .cards {
+    background-color: var(--primary-color);
+    width: 100%;
+    border-radius: 16px;
+    color: white;
+    margin-top: 2em;
+    box-shadow: 3px 3px 10px var(--text-color), 0 0 10px var(--secondary-color);
+}
+
+.cold-coffee .emphasis-card .cards:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.cold-coffee .emphasis-card .cards:hover .content_card p {
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.cold-coffee .emphasis-card .cards .content_card {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 0.4em;
+}
+
+.cold-coffee .emphasis-card .cards .content_card p {
+    color: #d3c6bf;
+}
+
+.cold-coffee .emphasis-card .cards .price-button {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    font-size: 1.2em;
+    font-weight: 550;
+}
+
+.cold-coffee .emphasis-card .cards .price-button button {
+    padding: .5em 1em;
+    border: none;
+    border-radius: 10px;
+    font-weight: 550;
+    color: #f5ecdf;
+    background-color: var(--tertiary-color);
+}
+
+.reward-banner {
+    align-items: center;
+    background-color: #f6ebda;
+    padding: 30px 172px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.text p {
+    margin: 0;
+    font-size: 1.5em;
+    color: #3c2d1d;
+    font-weight: bold;
+
+}
+
+.text a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #3c2d1d;
+    font-weight: bold;
+}
+
+.about-us {
+    background-color: #f6ebda;
+    padding: 30px 172px;
+}
+
+.about-us .picture {
+    width: 24em;
+    height: 20em;
+}
+
+.about-us .picture img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #faf4eb;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: 0px -100px;
+    box-shadow: 2px 2px 6px #988b7d;
+}
+
+.about-us .content {
+    color: var(--text-color);
+}
+
+.about-us .content h3::after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 24px;
+    border: 2px solid var(--secondary-color);
+    left: 13.9%;
+    top: -5px;
+}
+
+.about-us .content h4 {
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+.about-us .content button {
+    margin-top: 1em;
+    padding: .4em 1em;
+    border-radius: 16px;
+    border: none;
+    background-color: #3c2d1d;
+    color: var(--secondary-color);
+}

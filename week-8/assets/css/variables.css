@@ -1,0 +1,9 @@
+@import "fonts.css";
+
+:root {
+    --primary-color: #835e4c;
+    --secondary-color: #ffbd7f;
+    --tertiary-color: #a0583c;
+    --text-color: #201f1c;
+    --text-font: "Poppins", sans-serif;
+}
