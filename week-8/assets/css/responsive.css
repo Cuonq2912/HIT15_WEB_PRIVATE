@@ -184,7 +184,7 @@
 
 
 /* Tablet styles */
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 992px) {
     .emphasis-card {
         display: grid;
         grid-template-columns: repeat(2, minmax(280px, 1fr));
@@ -248,9 +248,3 @@
         object-fit: contain !important;
     }
 }
-
-/* Small laptop styles */
-@media (min-width: 768px) and (max-width: 992px) {}
-
-/* Desktop styles */
-@media (min-width: 992px) and (max-width: 1200px) {}
