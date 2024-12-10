@@ -1,0 +1,198 @@
+@import "variables.css";
+
+/* Mobile styles */
+@media (max-width: 576px) {
+
+    /* Header */
+    header {
+        height: auto;
+        width: 279%;
+        background-image: linear-gradient(to right, #fff, var(--secondary-color) 99%);
+    }
+
+    nav {
+        padding: 10px 50px;
+    }
+
+    nav ul {
+        font-size: 170%;
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    nav .logo-wrap {
+        width: 60px;
+        height: 60px;
+    }
+
+    ul a {
+        font-size: 1em;
+        color: #000000;
+    }
+
+    .search-wrap {
+        gap: 16px;
+        width: 30%;
+
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    header .content {
+        width: 70%;
+        padding-left: 400px;
+        padding-top: 100px;
+        font-size: 260%;
+    }
+
+
+    header .content .main-title {
+        width: 800px;
+    }
+
+    .coffee {
+        top: 10em;
+        left: 70em;
+    }
+
+    .coffee-item {
+        top: 18em;
+        right: 80em;
+        transform: rotate(180deg);
+    }
+
+
+    .categories {
+        font-size: 220%;
+        gap: 54px;
+        padding-top: 30px;
+        margin-top: 10rem;
+        background-image: linear-gradient(to right, var(--secondary-color), white) !important;
+    }
+
+    .categories img {
+        width: 120%;
+        height: 120%;
+    }
+
+    /* Cold Coffee Section */
+    .title {
+        font-size: 300%;
+    }
+
+    .emphasis-card {
+        flex-direction: column;
+        padding: 0 10em;
+
+    }
+
+    .content-image img {
+        width: 100%;
+    }
+
+    .cards {
+        font-size: 250%;
+    }
+
+    .price-button button {
+        font-size: 120%;
+    }
+
+
+    /* Reward Banner */
+    .reward-banner {
+        padding: 4em;
+        gap: 16px;
+        font-size: 200%;
+    }
+
+    .text p {
+        font-size: 1.2em;
+    }
+
+    /* Special Menu */
+    .menu {
+        padding: 16px;
+    }
+
+    .grid-container {
+        padding: 0 20em;
+        grid-template-columns: 1fr;
+        row-gap: 1.5em;
+    }
+
+    /* About Us */
+    .about-us {
+        flex-direction: column-reverse;
+        padding: 20em;
+        text-align: center;
+    }
+
+    .about-us .content {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 200%;
+        margin-top: 30px;
+    }
+
+    .about-us .content {
+        width: 100%;
+        font-size: 3.2rem;
+        padding-left: 0;
+        padding-top: 30px;
+    }
+
+    .about-us button {
+        font-size: 3.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-us .picture {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .about-us .picture img {
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        object-position: 5px 12%;
+    }
+
+    .footer p,
+    .social-icons img,
+    .logo-wrap {
+        font-size: 2.4rem;
+    }
+
+    .footer-bottom .nav-links {
+        flex-direction: row;
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom .nav-links a {
+        color: var(--text-color);
+    }
+
+}
+
+
+/* Tablet styles */
+@media (min-width: 576px) and (max-width: 768px) {
+    .cold-coffee {
+        display: grid;
+        grid-template-columns: repeat(auto fill, minmax(280px, 1fr));
+    }
+}
+
+/* Small laptop styles */
+@media (min-width: 768px) and (max-width: 992px) {}
+
+/* Desktop styles */
+@media (min-width: 992px) and (max-width: 1200px) {}
