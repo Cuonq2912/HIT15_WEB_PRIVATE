@@ -185,9 +185,67 @@
 
 /* Tablet styles */
 @media (min-width: 576px) and (max-width: 768px) {
-    .cold-coffee {
+    .emphasis-card {
         display: grid;
-        grid-template-columns: repeat(auto fill, minmax(280px, 1fr));
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+
+    header .content {
+        width: 70%;
+        font-size: 60%;
+    }
+
+    ul {
+        gap: 20px;
+    }
+
+    ul li a {
+        font-size: 1em;
+
+    }
+
+
+    header,
+    nav,
+    header .content,
+    .cold-coffee,
+    .reward-banner,
+    .menu,
+    .about-us,
+    .footer-bottom {
+        padding: 3px 30px !important;
+    }
+
+    .coffee,
+    .coffee img,
+    .coffee-item img {
+        width: 40%;
+        height: auto;
+        left: 420px;
+        top: 310px;
+    }
+
+    .coffee-item {
+        display: inline-block;
+        width: auto;
+        left: 800px;
+    }
+
+
+    .categories {
+        gap: 10%;
+        padding: 10px;
+        border-radius: 18px;
+    }
+
+    .categories .cate-logo {
+        width: 50%;
+        height: auto;
+        object-fit: contain !important;
     }
 }
 
