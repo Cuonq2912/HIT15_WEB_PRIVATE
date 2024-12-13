@@ -1,250 +1,254 @@
 @import "variables.css";
 
-/* Mobile styles */
-@media (max-width: 576px) {
-
-    /* Header */
+/* MOBILE: width < 740px */
+@media (max-width: 739px) {
     header {
+        padding: 0 16px;
         height: auto;
-        width: 279%;
-        background-image: linear-gradient(to right, #fff, var(--secondary-color) 99%);
     }
 
     nav {
-        padding: 10px 50px;
+        position: relative;
+        z-index: 10;
     }
 
     nav ul {
-        font-size: 170%;
-        flex-direction: row;
-        gap: 70px;
+        font-size: 0.8em;
+        gap: 36px;
     }
 
-    nav .logo-wrap {
-        width: 60px;
-        height: 60px;
+    .search-wrap .search {
+        display: none;
     }
 
-    ul a {
-        font-size: 1em;
-        color: #000000;
+    header .content {
+        font-size: 16px;
+        max-width: 280px;
+        margin-top: 24px;
+    }
+
+    header .content .title-os {
+        font-size: 24px;
+    }
+
+    header .coffee {
+        width: 120px;
+        height: 120px;
+        left: 60%;
+        top: 30%;
+    }
+
+    header .coffee-item {
+        z-index: 1;
+        width: 180px;
+    }
+
+    .categories {
+        font-size: 12px;
+        padding: 24px;
+        margin-top: 2em;
+        gap: 24px;
+        border-radius: 16px;
+    }
+
+    .categories .cate .cate-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .categories .cate .cate-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cold-coffee {
+        padding: 0 16px;
+        margin-top: -6em;
+    }
+
+    .cold-coffee .content {
+        flex-direction: column;
+        padding: 0 32px;
+        gap: 32px;
+    }
+
+    .cold-coffee .content .cards {
+        width: 100%;
+    }
+
+    .sign-up {
+        padding: 16px 16px;
+    }
+
+    .menu {
+        padding: 0 5.35em;
+    }
+
+    .menu .content {
+        grid-template-columns: 1fr;
+    }
+
+    .menu .content-image,
+    .menu button {
+        padding: 0;
+    }
+
+    .menu {
+        font-size: 1.4em;
+    }
+
+    .menu .cost {
+        font-size: 0.8em;
+    }
+
+    .about-us {
+        padding: 24px 16px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .content {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-us .content .desc {
+        max-width: 80%;
+    }
+
+    .about-us .title {
+        max-width: 200px;
+    }
+
+    .about-us .image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-us .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .footer {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .footer-content {
+        font-size: 0.8em;
+    }
+
+    .footer-content ul {
+        gap: 0.4em;
+    }
+
+    .footer-content .title {
+        font-size: 1.8em;
+    }
+}
+
+/* TABLET width < 1024px  */
+@media (min-width: 740px) and (max-width: 1024px) {
+    header {
+        padding: 0 96px;
+        height: 550px;
+    }
+
+    nav {
+        position: relative;
+        z-index: 10;
+    }
+
+    nav ul {
+        gap: 32px;
     }
 
     .search-wrap {
         gap: 16px;
-        width: 30%;
-
-    }
-
-    .search {
-        width: 80%;
     }
 
     header .content {
-        width: 70%;
-        padding-left: 400px;
-        padding-top: 100px;
-        font-size: 260%;
+        font-size: 18px;
+        max-width: 348px;
+        margin-top: 54px;
     }
 
-
-    header .content .main-title {
-        width: 800px;
+    header .content .title-os {
+        font-size: 32px;
     }
 
-    .coffee {
-        top: 10em;
-        left: 70em;
+    header .coffee {
+        width: 300px;
+        height: 300px;
+        left: 45%;
     }
 
-    .coffee-item {
-        top: 18em;
-        right: 80em;
-        transform: rotate(180deg);
+    header .coffee-item {
+        z-index: 1;
+        width: 250px;
     }
-
 
     .categories {
-        font-size: 220%;
-        gap: 54px;
-        padding-top: 30px;
-        margin-top: 10rem;
-        background-image: linear-gradient(to right, var(--secondary-color), white) !important;
+        font-size: 18px;
+        padding: 36px;
+        gap: 72px;
     }
 
-    .categories img {
-        width: 120%;
-        height: 120%;
+    main {
+        margin-top: 124px;
     }
 
-    /* Cold Coffee Section */
-    .title {
-        font-size: 300%;
+    .cold-coffee {
+        padding: 0 96px;
+        margin-top: 16em;
     }
 
-    .emphasis-card {
-        flex-direction: column;
-        padding: 0 10em;
-
-    }
-
-    .content-image img {
-        width: 100%;
-    }
-
-    .cards {
-        font-size: 250%;
-    }
-
-    .price-button button {
-        font-size: 120%;
-    }
-
-
-    /* Reward Banner */
-    .reward-banner {
-        padding: 4em;
-        gap: 16px;
-        font-size: 200%;
-    }
-
-    .text p {
-        font-size: 1.2em;
-    }
-
-    /* Special Menu */
-    .menu {
-        padding: 16px;
-    }
-
-    .grid-container {
-        padding: 0 20em;
-        grid-template-columns: 1fr;
-        row-gap: 1.5em;
-    }
-
-    /* About Us */
-    .about-us {
-        flex-direction: column-reverse;
-        padding: 20em;
-        text-align: center;
-    }
-
-    .about-us .content {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 200%;
-        margin-top: 30px;
-    }
-
-    .about-us .content {
-        width: 100%;
-        font-size: 3.2rem;
-        padding-left: 0;
-        padding-top: 30px;
-    }
-
-    .about-us button {
-        font-size: 3.2rem;
-        margin-bottom: 3rem;
-    }
-
-    .about-us .picture {
-        width: 100%;
-        height: auto;
-        margin-bottom: 16px;
-    }
-
-    .about-us .picture img {
-        height: auto;
-        object-fit: cover;
-        border-radius: 10px;
-        object-position: 5px 12%;
-    }
-
-    .footer p,
-    .social-icons img,
-    .logo-wrap {
-        font-size: 2.4rem;
-    }
-
-    .footer-bottom .nav-links {
-        flex-direction: row;
-        font-size: 1.5rem;
-    }
-
-    .footer-bottom .nav-links a {
-        color: var(--text-color);
-    }
-
-}
-
-
-/* Tablet styles */
-@media (min-width: 576px) and (max-width: 992px) {
-    .emphasis-card {
+    .cold-coffee .content {
         display: grid;
-        grid-template-columns: repeat(2, minmax(280px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
     }
 
-    .grid-container {
-        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    .cold-coffee .content .cards {
+        width: 100%;
+        flex: none;
     }
 
-    header .content {
-        width: 70%;
-        font-size: 60%;
+    .sign-up {
+        padding: 32px 96px;
     }
 
-    ul {
-        gap: 20px;
+    .menu {
+        padding: 0 96px;
     }
 
-    ul li a {
-        font-size: 1em;
-
+    .menu .content {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-
-    header,
-    nav,
-    header .content,
-    .cold-coffee,
-    .reward-banner,
-    .menu,
-    .about-us,
-    .footer-bottom {
-        padding: 3px 30px !important;
+    .menu .content-image,
+    .menu button {
+        padding: 0 10px;
     }
 
-    .coffee,
-    .coffee img,
-    .coffee-item img {
-        width: 40%;
-        height: auto;
-        left: 420px;
-        top: 310px;
+    .menu {
+        font-size: 1.6em;
     }
 
-    .coffee-item {
-        display: inline-block;
-        width: auto;
-        left: 800px;
+    .menu .cost {
+        font-size: 0.6em;
     }
 
-
-    .categories {
-        gap: 10%;
-        padding: 10px;
-        border-radius: 18px;
+    .about-us {
+        padding: 36px 96px;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
-    .categories .cate-logo {
-        width: 50%;
-        height: auto;
-        object-fit: contain !important;
+    .footer {
+        padding: 0 16px;
     }
 }

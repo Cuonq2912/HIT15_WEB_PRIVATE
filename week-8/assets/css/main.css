@@ -86,7 +86,6 @@ ul a:hover {
     background-color: #fff;
 }
 
-
 .search input {
     outline: none;
     border: none;
@@ -165,7 +164,6 @@ header .coffee {
     height: 400px;
     top: 20%;
     left: 52%;
-
 }
 
 header .coffee img {
@@ -175,9 +173,9 @@ header .coffee img {
 }
 
 header .coffee-item {
-    position: absolute;
     right: 0;
     top: 0;
+    position: absolute;
 }
 
 header .coffee-item img {
@@ -359,6 +357,8 @@ main>div {
 .about-us .image {
     width: 620px;
     height: 400px;
+    /* width: 30em;
+    height: 25em; */
 }
 
 .about-us .image img {
@@ -372,13 +372,14 @@ main>div {
 
 .about-us .content {
     flex-direction: column;
+    margin-top: 5em;
 }
 
 .about-us .content .sub-title {
     font-weight: 700;
     font-size: 120%;
     margin-top: -10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .about-us .content p:not(.sub-title) {
@@ -436,7 +437,6 @@ hr {
 
 .footer-content div {
     justify-content: space-between;
-    /* padding-left: 120px; */
 }
 
 .footer-content .mail .mail-wrap input,
