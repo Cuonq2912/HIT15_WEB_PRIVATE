@@ -1,10 +1,11 @@
 @import "variables.css";
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--text-font);
+    font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .flex {
@@ -22,56 +23,305 @@
 .header {
     flex-direction: column;
     justify-content: space-between;
-    height: 130vh;
+    height: 100vh;
     position: relative;
-    margin-bottom: 500px;
+    filter: brightness(1.5);
+    color: #fff;
 }
 
 .header .image {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
-    z-index: -100;
+    z-index: -10;
+    filter: brightness(0.5);
 }
 
 .header .image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: 0 -16em;
 }
 
-.header .header-menu .logo img {
-    width: 200%;
-    height: 200%;
-}
-
-.header .header-menu {
-    align-items: center;
-    justify-content: space-between;
-    font-size: 4em;
-    padding: 1em 1em;
-}
-
-.header .header-menu .menu .menu-info {
-    gap: 1em;
-}
-
-.header .header-menu .menu ul {
+.header .menu ul {
     list-style: none;
 }
 
-.header .header-menu .menu li a {
-    color: aliceblue;
+.header .menu ul li a {
+    text-decoration: none;
+    color: #fff;
 }
+
+.header .menu ul li a:hover {
+    color: var(--text-header-color);
+    padding-bottom: 0.2em;
+    border-bottom: .15em solid var(--text-header-color);
+    transition: 0.15s;
+}
+
+
+.header-menu {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    padding: 40px 36px;
+}
+
+.menu-info {
+    position: relative;
+    gap: 2.5em;
+}
+
+.menu-info .sub-menu {
+    position: absolute;
+    flex-direction: column;
+    align-items: end;
+    background-color: #fff;
+    width: max-content;
+    padding: 0.5em;
+    border-radius: 14px;
+    font-weight: 550;
+    font-size: 1em;
+    top: 2.4em;
+    opacity: 0;
+}
+
+.menu-info li:last-child:hover .sub-menu {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.menu-info .sub-menu li:hover {
+    padding-bottom: 1.15em;
+    border-bottom: 0em solid var(--text-header-color);
+    transition: .15s;
+}
+
+.menu-info .sub-menu li:hover a {
+    color: var(--text-header-color);
+}
+
+
+.sub-menu li a {
+    color: #000 !important;
+    font-weight: 500;
+}
+
 
 .header .content {
     flex-direction: column;
-    gap: 0.6em;
-    padding: 1em 1em;
-    color: aliceblue;
-    font-size: 400%;
-    width: 35em;
+    padding: 40px 36px;
+    font-size: 150%;
+    gap: 1.3em;
+    max-width: 80%;
+}
+
+.header .content p {
+    max-width: 85%;
+}
+
+.header .content h1 {
+    font-size: 2.3em;
+}
+
+.header .content #name {
+    margin-bottom: -0.5em;
 }
 
 /*==========================================*/
 /*               BAN CHU NHIEM              */
 /*==========================================*/
+
+#title {
+    margin-top: 7em;
+    margin-bottom: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#title:hover {
+    transform: translateY(-5px);
+    transition: 0.4s ease;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
+}
+
+.info .homeroom {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: max-content;
+    gap: 2em;
+}
+
+.homeroom .hr1 {
+    grid-area: 1/2/2/4;
+}
+
+.homeroom .hr2 {
+    grid-area: 2/1/3/3;
+}
+
+.homeroom .hr3 {
+    grid-area: 2/3/3/5;
+}
+
+.hr1,
+.hr2,
+.hr3 {
+    border: .03px solid rgb(174, 168, 168);
+    padding: 0.8em;
+    border-radius: 18px;
+    gap: 1.75em;
+    box-shadow: 1px 0px 4px rgba(34, 33, 33, 0.5);
+}
+
+.hr1 h3,
+.hr2 h3,
+.hr3 h3 {
+    max-width: 8em;
+    color: var(--text-header-color);
+}
+
+.homeroom .content {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.homeroom .content .social-media a {
+    margin-right: 0.6em;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/*==========================================*/
+/*                  ACTIVITIES              */
+/*==========================================*/
+
+.activities .img {
+    width: 33em;
+    height: 19em;
+    position: relative;
+}
+
+.activities .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activities {
+    flex-direction: column;
+    align-items: center;
+}
+
+.activities h1 {
+    font-size: 300%;
+}
+
+.activities .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+}
+
+.container p {
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    top: 0.7em;
+}
+
+.container .acty:nth-child(1) p,
+.container .acty:nth-child(3) p {
+    left: 0.7em;
+}
+
+.container .acty:nth-child(2) p,
+.container .acty:nth-child(4) p {
+    right: .7em;
+}
+
+/*==========================================*/
+/*                    CLASS                 */
+/*==========================================*/
+
+.some-class {
+    flex-direction: column;
+    align-items: center;
+}
+
+.some-class h1 {
+    font-size: 300%;
+}
+
+.study-class {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2em;
+}
+
+.study-class .class-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.study-class .class-item .content {
+    font-weight: 620;
+    font-size: 2em;
+}
+
+/*==========================================*/
+/*                   FOOTER                 */
+/*==========================================*/
+
+hr {
+    border: 0;
+    border-top: 2px solid orange;
+    margin-top: 4em;
+}
+
+.footer {
+    padding: 2em 3em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .social-media a img {
+    margin-left: 1.2em;
+}
+
+
+.footer .social-media a:not(:first-child) img {
+    width: 2.4em;
+    height: auto;
+}
+
+.footer .social-media a:first-child img {
+    width: 1.9em;
+    height: auto;
+}
+
+.hr1:hover,
+.hr2:hover,
+.hr3:hover,
+.acty:hover,
+.class-item:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease;
+}
