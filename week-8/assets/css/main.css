@@ -25,7 +25,7 @@ header {
             #fff 65%,
             var(--secondary-color) 55%,
             var(--secondary-color) 100%);
-
+    padding: 0 172px;
     position: relative;
 }
 
@@ -33,7 +33,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 172px;
+    padding: 16px 0;
 }
 
 nav .logo-wrap {
@@ -73,23 +73,19 @@ ul a:hover {
 .search-wrap {
     display: flex;
     gap: 32px;
+    align-items: center;
 }
 
 .search {
     display: flex;
     border: 3px solid;
     height: 40px;
-    align-items: center;
     padding: 8px;
     border-radius: 20px;
     gap: 8px;
     background-color: #fff;
 }
 
-.search .icon-wrap {
-    display: flex;
-    align-items: center;
-}
 
 .search input {
     outline: none;
@@ -101,29 +97,28 @@ ul a:hover {
 /*==========================================*/
 
 header .content {
-    width: 740px;
+    width: 500px;
     font-size: 20px;
     color: var(--text-color);
-    margin-top: 52px;
-    padding-left: 172px;
+    margin-top: 80px;
 }
 
-header .content .outstanding-title {
+header .content .title-os {
     font-size: 52px;
     font-weight: 700;
     margin-bottom: 24px;
 }
 
-header .content .main-title {
+header .content .desc {
     width: 390px;
 }
 
-header .content .outstanding-title span {
+header .content .title-os span {
     color: var(--secondary-color);
 }
 
 .button,
-.about-us button {
+.about-us .content button {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -134,14 +129,14 @@ header .content .outstanding-title span {
     border-radius: 24px;
     cursor: pointer;
     margin-top: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0.1px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 
 .button:hover,
 .about-us button:hover {
     transform: scale(1.14);
-    transition: .12s linear;
+    transition: .13s linear;
 
 }
 
@@ -149,36 +144,22 @@ header .content .outstanding-title span {
 /*                ALL TITLE                 */
 /*==========================================*/
 .title {
-    font-size: 2em;
-    font-weight: 508;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    color: var(--text-color);
 }
 
-.title::after {
-    position: relative;
-    content: "";
-    display: block;
-    width: 7.7%;
-    border: 2px solid var(--secondary-color);
-    top: -5px;
+.title span {
+    border-bottom: 4px solid var(--secondary-color);
 }
 
-.content .title::after {
-    left: 23.5%;
-}
-
-.cold-coffee .title::after {
-    left: 7.6%;
-}
-
-.menu .title::after {
-    left: 20.5%;
-}
 
 /*==========================================*/
 /*           HEADER COFFEE IMAGE            */
 /*==========================================*/
 
-.coffee {
+header .coffee {
     position: absolute;
     width: 400px;
     height: 400px;
@@ -187,16 +168,22 @@ header .content .outstanding-title span {
 
 }
 
-.coffee img {
+header .coffee img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.coffee-item {
+header .coffee-item {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+header .coffee-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*==========================================*/
@@ -204,20 +191,17 @@ header .content .outstanding-title span {
 /*==========================================*/
 
 .categories {
-    display: flex;
     background: #f6ebda;
-    padding: 28px 186px;
-    padding-top: 36px;
+    padding: 36px 186px;
     gap: 140px;
     width: max-content;
-    border-radius: 48px;
+    border-radius: 56px;
     position: relative;
     margin-bottom: 12em;
     bottom: -20%;
     left: 50%;
     transform: translateX(-50%);
     font-weight: bold;
-
 }
 
 .categories .cate {
@@ -232,8 +216,8 @@ header .content .outstanding-title span {
 }
 
 .categories .cate-logo {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
 
 .categories .cate-logo img {
@@ -246,23 +230,36 @@ header .content .outstanding-title span {
 /*               COLD COFFEE                */
 /*==========================================*/
 
-.cold-coffee {
-    margin-top: 180px;
-    background-color: var(--background-color);
-    padding: 0 172px;
+main {
+    display: block;
+    margin-top: 170px;
 }
 
-.cold-coffee .emphasis-card {
-    gap: 2.6em;
+main>div {
+    margin: 64px 0;
+}
+
+.cold-coffee {
+    background-color: var(--background-color);
+    padding: 0 172px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cold-coffee .content {
+    gap: 36px;
 }
 
 .cards {
+    padding: 17px;
     background-color: var(--primary-color);
-    width: 100%;
-    border-radius: 20px;
     color: white;
-    margin-top: 2em;
-    box-shadow: 3px 3px 10px var(--text-color), 0 0 7px var(--secondary-color);
+    border-radius: 24px;
+    flex-direction: column;
+    flex: 1;
+    /* flex-grow: 1;flex-shrink: 1;flex-basis: 0%; */
+    font-weight: 500;
+    box-shadow: 0px 4px 15px -3px var(--text-color), 0 2px 5px var(--secondary-color);
 }
 
 .cards:hover {
@@ -277,63 +274,55 @@ header .content .outstanding-title span {
     transition: 0.3s;
 }
 
-.cards .content_card {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
+
+.cold-coffee .cards .content-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0;
 }
 
-.cold-coffee .emphasis-card .cards .content_card p {
-    color: #d3c6bf;
+.cold-coffee .cards .content-image {
+    width: 100%;
+    height: fit-content;
 }
+
+.cold-coffee .cards .content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .cards .price-button {
     display: flex;
-    padding: 1em;
+    margin-top: 24px;
+    align-items: center;
     justify-content: space-between;
     font-size: 1.2em;
     font-weight: 550;
 }
 
 .cards .price-button button {
-    padding: .5em 1em;
-    border: none;
+    padding: 8px 16px;
     border-radius: 10px;
+    border: none;
     font-weight: 550;
     color: #f5ecdf;
     cursor: pointer;
     background-color: var(--tertiary-color);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 1);
 }
 
 /*==========================================*/
 /*              REWARD BANNER               */
 /*==========================================*/
 
-.reward-banner {
+.sign-up {
     align-items: center;
     background-color: #f6ebda;
     padding: 30px 172px;
-    border-radius: 8px;
-    margin: 40px 0;
-}
-
-.icon {
-    margin-right: 10px;
-}
-
-.text p {
-    margin: 0;
-    font-size: 1.5em;
-    color: #3c2d1d;
-    font-weight: bold;
-
-}
-
-.text a {
-    text-decoration: none;
-    font-size: 1em;
-    color: #3c2d1d;
-    font-weight: bold;
+    gap: 32px;
+    font-size: 1.2em;
 }
 
 /*==========================================*/
@@ -344,14 +333,17 @@ header .content .outstanding-title span {
     padding: 0 172px;
 }
 
-.menu .cards .price-button {
-    padding-top: 0;
+.menu .cards {
+    margin-bottom: 2.4em;
 }
 
-.grid-container {
+.menu .cards .price-button {
+    margin-top: 12px;
+}
+
+.menu .content {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 2.8em;
+    column-gap: 2.4em;
 }
 
 /*==========================================*/
@@ -361,143 +353,110 @@ header .content .outstanding-title span {
 .about-us {
     background-color: #f6ebda;
     padding: 50px 172px;
-    margin-top: 4em;
+    gap: 5em;
 }
 
-.about-us .picture {
-    width: 24em;
-    height: 20em;
+.about-us .image {
+    width: 620px;
+    height: 400px;
 }
 
-.about-us .picture img {
+.about-us .image img {
     width: 100%;
     height: 100%;
-    border: 5px solid #faf4eb;
-    border-radius: 16px;
     object-fit: cover;
-    object-position: 0px -100px;
-    box-shadow: 2px 2px 6px #988b7d;
+    object-position: 80% 65%;
+    border-radius: 16px;
+    border: 3px #fff solid;
 }
 
 .about-us .content {
     flex-direction: column;
-    color: var(--text-color);
-    gap: 0.4em;
-    margin-top: 30px;
 }
 
-.about-us .content h4 {
-    font-weight: 520;
+.about-us .content .sub-title {
+    font-weight: 700;
+    font-size: 120%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.about-us .content p:not(.sub-title) {
+    width: 600px;
 }
 
 .about-us .content button {
-    background-color: #3c2d1d;
     color: var(--secondary-color);
 }
-
-.about-us .content button:hover,
-.cards .button:hover,
-.button p {}
 
 /*==========================================*/
 /*                    FOOTER                */
 /*==========================================*/
 
 .footer {
-    flex-direction: column;
-    gap: 2em;
-    padding-bottom: 60px;
+    margin: 0 172px;
+    margin-bottom: 20px;
 }
 
-.footer nav {
-    display: flex;
-    justify-content: space-between;
+.footer .logo-wrap {
+    width: 80px;
+    height: 80px;
 }
 
-.logo-wrap {
-    align-items: center;
-    gap: 10px;
+.footer .logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.logo-wrap img {
-    width: 40px;
-    height: 40px;
-}
-
-.logo-wrap p,
-.newsletter {
-    font-size: 1.4rem;
-    font-weight: 550;
+.footer-header .footer-logo p {
+    font-weight: 600;
     color: var(--text-color);
 }
 
-.social-icons {
-    display: flex;
-    /* Xoa dau gach duoi*/
-    gap: 10px;
-}
-
-.social-icons a img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons a:hover img {
-    transform: scale(1.2);
-}
-
-.nav-links {
-    flex-direction: column;
-    align-items: start;
-    gap: 1em;
-    padding: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-color);
-    display: inline-block;
-    color: #a0583c;
-    font-weight: 650;
-}
-
-.nav-links a:hover {
-    padding-bottom: .4rem;
-    border-bottom: .2rem solid var(--secondary-color);
-    transition: .2s linear;
-    color: var(--secondary-color);
-}
-
-.footer-bottom {
-    justify-content: space-between;
+.footer .footer-header,
+.footer .footer-logo {
     align-items: center;
-    padding: 0px 290px;
+    justify-content: space-between;
 }
 
-.newsletter {
+.footer .footer-header .social-icon i {
+    margin-left: 10px;
+    color: black;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.footer-content ul {
     flex-direction: column;
-    gap: 1em;
+    gap: 1.2em;
 }
 
-.input-data input,
-.input-data button {
-    padding: 1em 1em;
+.footer-content div {
+    justify-content: space-between;
+    /* padding-left: 120px; */
+}
+
+.footer-content .mail .mail-wrap input,
+.footer-content .mail .mail-wrap button {
+    margin-top: -20px;
+    padding: 10px 10px;
     border: none;
+    outline: none;
 }
 
-.input-data input {
+.footer-content .mail .mail-wrap input {
     background-color: #f6ebda;
-    color: var(--text-color);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: var(--primary-color);
 }
 
-.input-data button {
+.footer-content .mail .mail-wrap button {
     background-color: var(--primary-color);
-    color: #d3c6bf;
-}
-
-.input-data button:hover {
-    background-color: var(--secondary-color);
-    transition: .5s linear;
-    cursor: pointer;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: var(--secondary-color);
 }
