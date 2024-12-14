@@ -34,7 +34,7 @@
     position: absolute;
     top: 0;
     z-index: -10;
-    filter: brightness(0.5);
+    filter: brightness(0.45);
 }
 
 .header .image img {
