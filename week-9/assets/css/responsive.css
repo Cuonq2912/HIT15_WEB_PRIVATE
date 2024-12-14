@@ -99,11 +99,19 @@
     }
 
     .header {
-        font-size: 0.7em;
+        font-size: 0.5em;
+    }
+
+    .header .content {
+        font-size: 1.5em;
+    }
+
+    #title {
+        font-size: .6em;
     }
 
     .homeroom {
-        font-size: 1em;
+        font-size: 0.7em;
     }
 
     .menu-info {
@@ -128,7 +136,7 @@
     }
 
     .acty .img {
-        width: 24em;
+        width: 22em;
         height: auto;
     }
 
@@ -138,7 +146,19 @@
         object-fit: cover;
     }
 
+    .acty p {
+        font-size: 0.85em;
+    }
+
     .activities .container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .class-item .content p {
+        flex: 0.7em;
+    }
+
+    .footer .social-media a img {
+        margin-left: 0.2em;
     }
 }
