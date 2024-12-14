@@ -1,6 +1,5 @@
 @import "variables.css";
 
-
 * {
     margin: 0;
     padding: 0;
@@ -109,6 +108,9 @@
     font-weight: 500;
 }
 
+.header {
+    justify-content: space-between;
+}
 
 .header .content {
     flex-direction: column;

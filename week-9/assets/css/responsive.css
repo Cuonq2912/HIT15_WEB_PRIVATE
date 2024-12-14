@@ -1,1 +1,140 @@
 @import "variables.css";
+
+
+@media screen and (min-width: 1440px) {
+    .header .image {
+        object-fit: contain;
+    }
+
+    .header-menu .logo {
+        width: 6em;
+        height: auto;
+    }
+
+    .header-menu .logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-menu {
+        font-size: 2.35em;
+    }
+
+    .header .content {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header .image {
+        height: 120vh;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .header-menu .logo {
+        width: 5em;
+        height: auto;
+    }
+
+    .header-menu .logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-menu {
+        font-size: 0.95em;
+    }
+
+    .header .content {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header .content {
+        font-size: 1.4em;
+        max-width: 40em;
+    }
+
+    .homeroom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activities .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 577px) {
+    .header .image {
+        height: 126vh;
+        object-fit: contain;
+    }
+
+    .header .content {
+        font-size: 1.4em;
+        max-width: 40em;
+    }
+
+    .homeroom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activities .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header .image {
+        height: 120vh;
+        object-fit: contain;
+    }
+
+    .header {
+        font-size: 0.7em;
+    }
+
+    .homeroom {
+        font-size: 1em;
+    }
+
+    .menu-info {
+        flex-direction: column;
+        gap: 0.8em;
+        font-size: 0.7em;
+    }
+
+
+    .homeroom .avatar {
+        width: 6em;
+        height: auto;
+    }
+
+    .study-class {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .homeroom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acty .img {
+        width: 24em;
+        height: auto;
+    }
+
+    .acty .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .activities .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
