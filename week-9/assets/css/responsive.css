@@ -108,7 +108,7 @@
 
 @media screen and (max-width: 576px) {
     .header .image {
-        height: 120vh;
+        height: 130vh;
     }
 
     .header .image img {
