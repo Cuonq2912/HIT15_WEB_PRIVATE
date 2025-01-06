@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+</head>
+
+<body>
+    <div>
+
+        <span id="hi" class="hi1 hi2">Hello</span>
+        <span id="bye">BYE</span>
+    </div>
+
+    <script>
+        const body = document.body;
+        const div = document.createElement('div');
+
+        const spanHi = document.querySelector("#hi");
+        const spanBye = document.querySelector("#bye");
+
+        spanHi.classList.add("new-class");
+        spanBye.children.remove("bye")
+        spanHi.classList.add("")
+
+        // div.innerHTML = "<strong>Hi</strong>";
+
+        // // // div.innerHTML = "hiiii"
+        // // div.textContent = "hiiii"
+        // body.append(div);
+
+        // // const div = document.querySelector("div");
+        // // console.log(div.textContent);
+        // // console.log(div.innerHTML);
+
+        // const strong = document.createElement('strong');
+        // strong.innerText = "Muhaaaa"
+        // body.append(strong);
+
+
+    </script>
+</body>
+
+</html>

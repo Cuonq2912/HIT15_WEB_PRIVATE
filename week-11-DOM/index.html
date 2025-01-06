@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            /* height: 100vh; */
+            background-color: rgb(162, 156, 156);
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 8px;
+        }
+
+        .container div {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <script>
+        const container = document.querySelector('.container');
+        let numbers = 100;
+
+        function isEven(num) {
+            return num % 2 === 0;
+        }
+
+        function isOdd(num) {
+            return num % 2 !== 0;
+        }
+
+        function isPrime(num) {
+            if (num <= 1) return false; // Handle numbers less than or equal to 1
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return num > 1; // Ensure numbers greater than 1 are considered
+        }
+
+        for (let i = 0; i < numbers; i++) {
+            const num = document.createElement("div"); // Corrected line
+            if (isPrime(i)) {
+                num.style.backgroundColor = 'red';
+            }
+            else if (isEven(i)) {
+                num.style.backgroundColor = 'green';
+            }
+            else {
+                num.style.backgroundColor = 'yellow';
+            }
+            num.innerHTML = i;
+            container.appendChild(num);
+        }
+    </script>
+</body>
+
+</html>
