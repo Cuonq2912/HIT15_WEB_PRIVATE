@@ -18,11 +18,10 @@ function isPrime(n) {
     return primes;
 }
 
-
 button.addEventListener("click", function () {
     let evenCount = 0, oddCount = 0, primeCount = 0;
     let n = input.value;
-
+    grid.innerHTML = "";
     if (n <= 0) {
         alert(`Nhập không hợp lệ!`)
         return
