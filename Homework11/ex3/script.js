@@ -23,8 +23,8 @@ draw.addEventListener("click", function () {
     output.textContent = `${content.value}`
 })
 
-reset.addEventListener("click", handleClick)
+reset.addEventListener("click", reset)
 
-function handleClick() {
-    window.location.reload();
+function reset() {
+    output.removeAttribute("style");
 }

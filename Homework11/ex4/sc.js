@@ -1,10 +1,9 @@
-const input = document.querySelector("input");
-const button = document.querySelector("button");
-const correct = document.querySelector(".true");
-const incorrect = document.querySelector(".false");
-const msg = document.querySelector(".messenge");
-const grid = document.querySelector(".grid-container");
-
+const input = document.querySelector("input")
+const button = document.querySelector("button")
+const correct = document.querySelector(".true")
+const incorrect = document.querySelector(".false")
+const msg = document.querySelector(".messenge")
+const grid = document.querySelector(".grid-container")
 
 let stringInput = "";
 let correctCount = 0;
@@ -12,13 +11,14 @@ let incorrectCount = 0;
 let currIndex = -1;
 
 function reset() {
-    grid.innerHTML = "";
-    correct.textContent = "0";
-    incorrect.textContent = "0";
-    msg.textContent = "";
+    stringInput = "";
     correctCount = 0;
     incorrectCount = 0;
     currIndex = -1;
+    grid.innerHTML = "";
+    msg.textContent = "";
+    correct.textContent = "";
+    incorrect.textContent = "";
 }
 
 button.addEventListener("click", function () {
@@ -33,12 +33,11 @@ button.addEventListener("click", function () {
         item.textContent = char;
         grid.appendChild(item);
     }
-
     document.addEventListener("keydown", validateInput);
-});
+})
 
-function validateInput(e) {
-    const gridItems = document.querySelectorAll('.grid-item');
+function validateInput() {
+    const gridItems = document.querySelectorAll(".grid-item");
     currIndex++;
 
     if (currIndex >= stringInput.length) return;
@@ -62,7 +61,6 @@ function validateInput(e) {
 function showNotification() {
     if (correctCount === stringInput.length) {
         msg.textContent = "Correct all";
-    } else {
-        msg.textContent = "Incorrect all";
     }
+    else msg.textContent = "Incorrect";
 }

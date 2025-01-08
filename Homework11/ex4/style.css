@@ -82,10 +82,10 @@ button:hover {
     background-color: #cb6040;
 }
 
-.correct {
-    background-color: #63c863;
+.grid-container div.incorrect {
+    background-color: #ee6854;
 }
 
-.incorrect {
-    background-color: #ee6854;
+.grid-container div.correct {
+    background-color: #63c863;
 }
