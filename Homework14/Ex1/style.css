@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #F4F4F4;
+    --grey-color: #c6c6c6;
+    --green-color: #3bb355;
+    --blue-color: #1975d8;
+    --yellow-color: #efbf30;
+    --red-color: #e14555;
+    --green-hover-color: #218838;
+    --blue-hover-color: #0056B3;
+    --yellow-hover-color: #E0A800;
+    --red-hover-color: #C82333;
+}
+
+.flex {
+    display: flex;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.todo-container,
+.list-todo {
+    background-color: white;
+
+}
+
+.todo-container {
+    text-align: center;
+    margin-top: 7em;
+    padding: 2.1em 1.2em;
+    border-radius: .5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+
+.typing-text {
+    padding: 1em;
+    margin: .75em 0;
+    border: .2px solid var(--grey-color);
+}
+
+.submit {
+    gap: .5em;
+    justify-content: center;
+}
+
+.submit>* {
+    padding: .6em;
+    border: 0.2px solid var(--grey-color);
+    border-radius: .2em;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    color: white;
+    background-color: var(--green-color);
+}
+
+button:hover {
+    background-color: var(--green-hover-color);
+}
+
+.list-todo {
+    width: 70%;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.task-item {
+    border: .1px solid var(--grey-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.9em;
+}
+
+#completeBtn,
+#editBtn,
+#deleteBtn {
+    padding: 0.4em 1em;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+#completeBtn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+#completeBtn:hover {
+    background-color: var(--blue-hover-color);
+}
+
+#editBtn {
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+}
+
+#editBtn:hover {
+    background-color: var(--yellow-hover-color);
+}
+
+#deleteBtn {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+
+#deleteBtn:hover {
+    background-color: var(--red-hover-color);
+}
+
+.edit-input {
+    padding: 1em;
+    padding-right: 7em;
+}
